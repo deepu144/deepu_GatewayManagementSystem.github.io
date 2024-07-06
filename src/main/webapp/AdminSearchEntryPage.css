@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Times New Roman', Times, serif !important;
+}
+ 
+.print_info_main{
+   display: none;
+   margin-top: 30px;
+   border-top: 2px solid whitesmoke;
+   border-bottom: 2px solid whitesmoke;
+   
+ }
+ .hidden {
+   display: none;
+}
+ #gate_entry_header_id{
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+ .print_info_details{
+   padding-top: 15px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+.navbar-brand {
+	border-radius: 8px;
+	padding: 2px;
+}
+.filter_by_sort{
+	margin-top:50px;
+	font-size:18px;
+}
+.filter_by_sort input{
+	width:200px;
+}
+red_star {
+	color: red;
+}
+
+#entry_report_name {
+	font-size: 20px;
+	font-weight: bold;
+	color: blue;
+	opacity: 0;
+	display: none;
+} 
+.navbar {
+	margin-top: 15px;
+}
+
+.main_header {
+	border-top: 5px solid orange;
+	width: 101vw;
+}
+
+.gate_entry_header {
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gate_entry_header_img {
+	width: 50%;
+	height: 100px;
+}
+
+.gate_entry_login_details {
+	width: 50%;
+	text-align: end;
+	padding-right: 50px;
+	text-wrap: wrap;
+	height: 100px;
+	padding-top: 25px;
+}
+
+.welcome_info {
+	font-size: 1.2rem;
+}
+
+#owner_info {
+	color: rgb(215, 140, 2);
+}
+
+.filter_details {
+	background-color: whitesmoke;
+	height: auto;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+
+.filter_details_bar {
+	width: 100vw;
+	padding: 10px;
+}
+/* .filter_by_rollnum{
+   display: flex;
+   justify-content: space-between;
+ } */
+.filter_by_rollnum input {
+	width: 59%;
+	height: 30px;
+}
+
+.filter_by_totime input {
+	width: 60%;
+	height: 30px;
+}
+
+.filter_by_fromtime input {
+	width: 60%;
+	height: 30px;
+}
+
+.filter_by_date input {
+	width: 60%;
+	height: 30px;
+}
+
+.filter_by_catagory select {
+	width: 60%;
+	height: 30px;
+	cursor: pointer;
+}
+.filter_by_sort{
+ padding-top:30px;
+ padding-bottom :-30px;
+}
+
+.date-placeholder, .category, .fromTime, .toTime, .rollNumber {
+	cursor: pointer;
+}
+
+.date-placeholder::-webkit-input-placeholder {
+	color: #999; /* Adjust the color as needed */
+}
+
+.date-placeholder::-moz-placeholder {
+	color: #999; /* Adjust the color as needed */
+}
+
+.date-placeholder:-ms-input-placeholder {
+	color: #999; /* Adjust the color as needed */
+}
+
+.date-placeholder {
+	cursor: pointer;
+	color: #000; /* Adjust the color as needed */
+}
+
+.hidden {
+	display: none;
+}
+
+@media screen and (max-width: 1800px) {
+	#KCE_img {
+		width: 75%;
+	}
+	.filter_details_bar {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1800px) {
+	.filter_details_bar {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.filter_details_bar {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.filter_details_bar {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.filter_details_bar {
+		display: grid !important;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	}
+	.main_header {
+		width: 70%;
+	}
+	.filter_by_rollnum, .filter_by_fromtime, .filter_by_catagory,
+		.filter_by_date, .filter_by_totime {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+#logout_btn {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: start;
+	width: 60%;
+}

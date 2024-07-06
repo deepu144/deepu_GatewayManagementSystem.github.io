@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+.count_update{
+  display: flex;
+  justify-content:  space-between;
+     align-items: center;
+  width: 200px;
+  font-weight: bold;
+  padding-left: 20px;
+  font-size: 15px;
+}
+.pop_alert_error {
+    width: 20rem;
+    height: 50px;
+    background-color: rgb(248, 172, 172);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    top: 120px;
+    animation: statusupdate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes statusupdate {
+    0% {
+        opacity: 0;
+        right: -100px;
+    }
+    25%{
+        opacity: 1;
+        right: 2vw;
+    }
+    50% {
+        opacity: 1;
+        right: 2vw;
+        
+    }
+    75%{
+        opacity: 1;
+        right: 4vw;
+    }
+    100%{
+        opacity: 0;
+        right: -100px;
+    }
+}
+.container {
+	max-width: 800px;
+	margin: 20px auto;
+	margin-top:3rem;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#gateImage {
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.input-group {
+	margin-bottom: 20px;
+	text-align: center;
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+	padding-left: 10%;
+}
+
+.input-group label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+.input-group input {
+	width: 60%;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#details {
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#idCardImage {
+	display: block;
+	margin: 20px auto;
+	width: 300px;
+	height: auto;
+}
+
+h3 {
+	color: rgb(204, 105, 38);
+}
+
+.person_details {
+	width: 60%;
+	padding: 0;
+	margin-top: -20px;
+}
+
+.welcome_red {
+	height: 50px;
+	text-align: center;
+	background-color: rgb(250, 2, 2);
+	border-radius: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 24px;
+	font-weight: bold;
+    color:white;
+}
+
+.welcome {
+	height: 50px;
+	text-align: center;
+	background-color: rgb(255, 174, 0);
+	border-radius: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 24px;
+	font-weight: bold;
+   	color: white;
+}
+
+.welcome_green {
+	height: 50px;
+	text-align: center;
+	 background-color: rgb(5, 250, 21);
+	border-radius: 7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 24px;
+	font-weight: bold;
+    color:black;
+}
+
+.person_info {
+	display: flex;
+	width: 100%;
+	margin-top: -10px;
+}
+
+.person_info_question {
+	width: 50%;
+	font-weight: 600;
+}
+
+#gate_entry_person_img {
+	height: 6.5rem;
+	width: 6.5rem;
+	opacity: 0.5;
+}
+
+.person_info_answer_from_db {
+	width: 50%;
+}
+
+@media screen and (max-width: 1800px) {
+}
+
+@media screen and (max-width: 1200px) {
+	#kce_logo {
+		width: 71%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 550px) {
+	.input-group {
+		padding-left: 10px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+}

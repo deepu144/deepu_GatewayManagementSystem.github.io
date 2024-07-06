@@ -1,0 +1,334 @@
+body {
+    font-family: 'Times New Roman', Times, serif !important;
+    overflow: hidden;
+    font-size:18px;
+    }
+ 
+.pop_alert_success {
+    width: 20rem;
+    height: 50px;
+    background-color: rgb(211, 250, 211);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    top: 120px;
+    animation: statusupdate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.pop_alert_error {
+    width: 20rem;
+    height: 50px;
+    background-color: rgb(248, 172, 172);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    top: 120px;
+    animation: statusupdate;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes statusupdate {
+    0% {
+        opacity: 0;
+        right: -100px;
+    }
+    25%{
+        opacity: 1;
+        right: 2vw;
+    }
+    50% {
+        opacity: 1;
+        right: 2vw;
+        
+    }
+    75%{
+        opacity: 1;
+        right: 4vw;
+    }
+    100%{
+        opacity: 0;
+        right: -100px;
+    }
+}
+
+
+.add_database_submit_btn {
+    background-color: rgb(44, 44, 254);
+    color: white !important;
+    padding: 3px;
+    width: 100px;
+}
+
+.pop_alert {
+    width: 18rem;
+    height: 50px;
+    background-color: rgb(248, 172, 172);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 5px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 18px;
+    top: 120px;
+    /* animation: statusupdateQ 3s ease-in forwards; */
+}
+
+@keyframes statusupdateQ {
+    0% {
+        opacity: 0;
+        right: -100px;
+    }
+
+    25% {
+        opacity: 1;
+        right: 2vw;
+    }
+
+    50% {
+        opacity: 1;
+        right: 2vw;
+    }
+
+    75% {
+        opacity: 1;
+        right: 4vw;
+    }
+
+    100% {
+        opacity: 0;
+        right: -100px;
+    }
+}
+@keyframes statusupdate {
+    0% {
+        opacity: 0;
+        right: -100px;
+    }
+
+    25% {
+        opacity: 1;
+        right: 2vw;
+    }
+
+    50% {
+        opacity: 1;
+        right: 2vw;
+    }
+
+    75% {
+        opacity: 1;
+        right: 4vw;
+    }
+
+    100% {
+        opacity: 0;
+        right: -100px;
+    }
+}
+
+.main_header {
+    border-top: 5px solid orange;
+    width: 100vw;
+
+
+}
+
+.gate_entry_header {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gate_entry_header_img {
+    width: 50%;
+    height: 100px;
+}
+
+.gate_entry_login_details {
+    width: 50%;
+    text-align: end;
+    padding-right: 50px;
+    text-wrap: wrap;
+    height: 100px;
+    padding-top: 25px;
+    /* font-size: 0.8rem; */
+}
+
+.welcome_info {
+    font-size: 1.2rem;
+}
+
+#owner_info {
+    color: rgb(215, 140, 2);
+}
+
+.navbar {
+    height: 75vh;
+    position: sticky;
+    top: 4vh;
+    border-radius: 8px;
+}
+
+.collapse {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    /* background-color: aquamarine; */
+    width: 80%;
+
+}
+
+.logout {
+    width: 100%;
+}
+
+.collapse .logout button {
+    padding: 5px;
+    padding-left: 15px;
+    width: 100%;
+    /* background-color: orange; */
+    border-radius: 8px;
+    font-weight: bold;
+
+
+}
+
+.navbar-nav {
+    width: 100%;
+    margin-top: 20px;
+    height: 55%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+
+.navbar-nav li {
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 2px 15px 15px 2px;
+}
+
+.add_database_header {
+    color: rgb(192, 127, 5);
+}
+
+.navbar-nav li a {
+    border-radius: 15px;
+    padding-left: 10px;
+
+
+}
+
+
+
+.nav_item_add_database {
+    background-color: rgba(250, 187, 69, 0.979);
+}
+
+.add_database {
+    border: 2px solid gray;
+}
+
+
+
+
+
+
+.navbar-nav .nav-item:hover {
+    background-color: rgb(226, 225, 225);
+    /* Change to desired background color */
+}
+
+.logout:hover {
+    color: rgb(190, 125, 3);
+    border-radius: 8px;
+    background-color: rgb(226, 225, 225);
+    /* Change to desired background color */
+}
+
+.navbar-nav button:hover {
+    color: rgb(190, 125, 3);
+    /* Change to desired text color */
+}
+#logout_btn{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    width: 60%;
+    
+}
+
+.add_database_form {
+    /* Apply border to form */
+    border-radius: 10px;
+    /* Add border radius */
+    padding: 20px;
+    /* Add some padding */
+}
+
+.add_database_header {
+    background-color: rgba(56, 93, 108, 0.87);
+    /* Change header background color */
+    color: #fff;
+    /* Change header text color */
+    padding: 10px;
+    /* Add padding to header */
+    border-radius: 5px;
+    /* Add border radius */
+}
+
+@media screen and (max-width: 1800px) {
+    #KCE_img {
+        width: 75%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 900px) {}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .main_header {
+        width: 105%;
+    }
+.navbar{
+    display: none !important;
+}
+
+}
